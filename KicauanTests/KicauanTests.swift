@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import Tweetly
+@testable import Kicauan
 
-class TweetlyTests: XCTestCase {
+class KicauanTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
