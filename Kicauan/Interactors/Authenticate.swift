@@ -14,7 +14,7 @@ protocol AuthenticateProtocol {
 
 struct Authenticate : AuthenticateProtocol {
     
-    let authenticationClient: AuthenticationClientProtocol
+    private let authenticationClient: AuthenticationClientProtocol
     
     init(authenticationClient: AuthenticationClientProtocol) {
         self.authenticationClient = authenticationClient
