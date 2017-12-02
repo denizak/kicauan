@@ -14,7 +14,7 @@ protocol DisplayUserProfileProtocol {
 
 struct DisplayUserProfile : DisplayUserProfileProtocol {
     
-    let userProfileClient: UserProfileClientProtocol
+    private let userProfileClient: UserProfileClientProtocol
     
     init(userProfileClient: UserProfileClientProtocol) {
         self.userProfileClient = userProfileClient
