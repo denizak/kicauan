@@ -10,6 +10,11 @@ target 'Kicauan' do
     inherit! :search_paths
     # Pods for testing
   end
+  
+  target 'KicauanIntegrationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
   target 'KicauanUITests' do
     inherit! :search_paths

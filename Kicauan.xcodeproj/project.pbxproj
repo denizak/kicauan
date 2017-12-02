@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28098C0D6B3B6DDBC7FCEE99 /* Pods_KicauanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB681B6BE2911D2D95D64B /* Pods_KicauanTests.framework */; };
+		132A614DEFC2988B49D5CC83 /* Pods_KicauanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A60AE85FE625EE3B062383 /* Pods_KicauanUITests.framework */; };
 		600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */; };
 		600CC0F21FD0E50A00AFBE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC0F11FD0E50A00AFBE56 /* ViewController.swift */; };
 		600CC0F51FD0E50A00AFBE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F31FD0E50A00AFBE56 /* Main.storyboard */; };
@@ -15,8 +15,12 @@
 		600CC0FA1FD0E50A00AFBE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F81FD0E50A00AFBE56 /* LaunchScreen.storyboard */; };
 		600CC1051FD0E50A00AFBE56 /* KicauanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1041FD0E50A00AFBE56 /* KicauanTests.swift */; };
 		600CC1101FD0E50A00AFBE56 /* KicauanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC10F1FD0E50A00AFBE56 /* KicauanUITests.swift */; };
-		A46041F8BD88F7DC56754575 /* Pods_Kicauan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB5FCCF113E99D478BDC0C4 /* Pods_Kicauan.framework */; };
-		A61198CE6C7C12AD7DF64DBD /* Pods_KicauanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A931CE14B4085E0EA2659217 /* Pods_KicauanUITests.framework */; };
+		600CC12C1FD1700900AFBE56 /* TwitterAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */; };
+		600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */; };
+		600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1301FD18A5900AFBE56 /* TwitterSession.swift */; };
+		7D8BCFB951D1AFA3CB8C01F3 /* Pods_KicauanIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */; };
+		8345A5324BD97F9F2CB5BC48 /* Pods_KicauanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */; };
+		F68A174F33D9E688AA26C9C4 /* Pods_Kicauan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +38,22 @@
 			remoteGlobalIDString = 600CC0EB1FD0E50A00AFBE56;
 			remoteInfo = Tweetly;
 		};
+		600CC1261FD16FD600AFBE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600CC0E41FD0E50A00AFBE56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600CC0EB1FD0E50A00AFBE56;
+			remoteInfo = Kicauan;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02A7BF4FF07EFEBFCA43551C /* Pods-TweetlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetlyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetlyTests/Pods-TweetlyTests.release.xcconfig"; sourceTree = "<group>"; };
-		1538DADB30D3D7488F38B9E0 /* Pods-TweetlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetlyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetlyUITests/Pods-TweetlyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		419F6643061BE83EC676AE94 /* Pods-Kicauan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kicauan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan.release.xcconfig"; sourceTree = "<group>"; };
+		0082DE9C0A81F7253D5771E0 /* Pods-KicauanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests.release.xcconfig"; sourceTree = "<group>"; };
+		06FA77195A5200553F6EF328 /* Pods-KicauanIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23A60AE85FE625EE3B062383 /* Pods_KicauanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KicauanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KicauanIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E5E1972BF43955A530F3DA /* Pods-Kicauan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kicauan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan.release.xcconfig"; sourceTree = "<group>"; };
+		5810763CC8643D4AE0FDB711 /* Pods-Kicauan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kicauan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan.debug.xcconfig"; sourceTree = "<group>"; };
 		600CC0EC1FD0E50A00AFBE56 /* Kicauan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kicauan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		600CC0F11FD0E50A00AFBE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,21 +67,17 @@
 		600CC10B1FD0E50A00AFBE56 /* KicauanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KicauanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CC10F1FD0E50A00AFBE56 /* KicauanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KicauanUITests.swift; sourceTree = "<group>"; };
 		600CC1111FD0E50B00AFBE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6488BD89B0A326B839BC8E69 /* Pods-KicauanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests.release.xcconfig"; sourceTree = "<group>"; };
-		7330305F09662D5F214328B6 /* Pods-Kicauan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kicauan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan.debug.xcconfig"; sourceTree = "<group>"; };
-		7B5629F24D3F0EB28220142B /* Pods-KicauanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		93B505F309BBC4839580D715 /* Pods-TweetlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetlyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetlyTests/Pods-TweetlyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B503318E7C6D7411634B804 /* Pods_TweetlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A931CE14B4085E0EA2659217 /* Pods_KicauanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KicauanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22DC3F555B9AEFDC42B87E2 /* Pods_TweetlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA42EC117C67748594E8B17C /* Pods-KicauanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C1A54AA933C7C8211BB238D8 /* Pods-Tweetly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetly/Pods-Tweetly.release.xcconfig"; sourceTree = "<group>"; };
-		C5289554EDFB43800FF40310 /* Pods_Tweetly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweetly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE96301D57E5DC8A088756F3 /* Pods-KicauanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D7CB681B6BE2911D2D95D64B /* Pods_KicauanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KicauanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DABD1583D91C941022102871 /* Pods-TweetlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetlyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetlyUITests/Pods-TweetlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DAF2B5280D9BAC2D331AE0F8 /* Pods-Tweetly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tweetly/Pods-Tweetly.debug.xcconfig"; sourceTree = "<group>"; };
-		FCB5FCCF113E99D478BDC0C4 /* Pods_Kicauan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kicauan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600CC1211FD16FD600AFBE56 /* KicauanIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KicauanIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		600CC1251FD16FD600AFBE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticationTests.swift; sourceTree = "<group>"; };
+		600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthentication.swift; sourceTree = "<group>"; };
+		600CC1301FD18A5900AFBE56 /* TwitterSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSession.swift; sourceTree = "<group>"; };
+		B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CBDE6095C6FC737238E21D09 /* Pods-KicauanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kicauan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KicauanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46041F8BD88F7DC56754575 /* Pods_Kicauan.framework in Frameworks */,
+				F68A174F33D9E688AA26C9C4 /* Pods_Kicauan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28098C0D6B3B6DDBC7FCEE99 /* Pods_KicauanTests.framework in Frameworks */,
+				8345A5324BD97F9F2CB5BC48 /* Pods_KicauanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,22 +101,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61198CE6C7C12AD7DF64DBD /* Pods_KicauanUITests.framework in Frameworks */,
+				132A614DEFC2988B49D5CC83 /* Pods_KicauanUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600CC11E1FD16FD600AFBE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8BCFB951D1AFA3CB8C01F3 /* Pods_KicauanIntegrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E53437B4820A435363882E9 /* Frameworks */ = {
+		56EB39C282BEC7D59912B5A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C5289554EDFB43800FF40310 /* Pods_Tweetly.framework */,
-				9B503318E7C6D7411634B804 /* Pods_TweetlyTests.framework */,
-				B22DC3F555B9AEFDC42B87E2 /* Pods_TweetlyUITests.framework */,
-				FCB5FCCF113E99D478BDC0C4 /* Pods_Kicauan.framework */,
-				D7CB681B6BE2911D2D95D64B /* Pods_KicauanTests.framework */,
-				A931CE14B4085E0EA2659217 /* Pods_KicauanUITests.framework */,
+				DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */,
+				FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */,
+				23A60AE85FE625EE3B062383 /* Pods_KicauanUITests.framework */,
+				31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,9 +133,10 @@
 				600CC0EE1FD0E50A00AFBE56 /* Kicauan */,
 				600CC1031FD0E50A00AFBE56 /* KicauanTests */,
 				600CC10E1FD0E50A00AFBE56 /* KicauanUITests */,
+				600CC1221FD16FD600AFBE56 /* KicauanIntegrationTests */,
 				600CC0ED1FD0E50A00AFBE56 /* Products */,
-				C60445E562E943E1835F893B /* Pods */,
-				0E53437B4820A435363882E9 /* Frameworks */,
+				6015630DBC675569D6EEE7BB /* Pods */,
+				56EB39C282BEC7D59912B5A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +146,7 @@
 				600CC0EC1FD0E50A00AFBE56 /* Kicauan.app */,
 				600CC1001FD0E50A00AFBE56 /* KicauanTests.xctest */,
 				600CC10B1FD0E50A00AFBE56 /* KicauanUITests.xctest */,
+				600CC1211FD16FD600AFBE56 /* KicauanIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +154,7 @@
 		600CC0EE1FD0E50A00AFBE56 /* Kicauan */ = {
 			isa = PBXGroup;
 			children = (
+				600CC12D1FD188F100AFBE56 /* Adapters */,
 				600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */,
 				600CC0F11FD0E50A00AFBE56 /* ViewController.swift */,
 				600CC0F31FD0E50A00AFBE56 /* Main.storyboard */,
@@ -164,21 +183,35 @@
 			path = KicauanUITests;
 			sourceTree = "<group>";
 		};
-		C60445E562E943E1835F893B /* Pods */ = {
+		600CC1221FD16FD600AFBE56 /* KicauanIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAF2B5280D9BAC2D331AE0F8 /* Pods-Tweetly.debug.xcconfig */,
-				C1A54AA933C7C8211BB238D8 /* Pods-Tweetly.release.xcconfig */,
-				93B505F309BBC4839580D715 /* Pods-TweetlyTests.debug.xcconfig */,
-				02A7BF4FF07EFEBFCA43551C /* Pods-TweetlyTests.release.xcconfig */,
-				DABD1583D91C941022102871 /* Pods-TweetlyUITests.debug.xcconfig */,
-				1538DADB30D3D7488F38B9E0 /* Pods-TweetlyUITests.release.xcconfig */,
-				7330305F09662D5F214328B6 /* Pods-Kicauan.debug.xcconfig */,
-				419F6643061BE83EC676AE94 /* Pods-Kicauan.release.xcconfig */,
-				BA42EC117C67748594E8B17C /* Pods-KicauanTests.debug.xcconfig */,
-				6488BD89B0A326B839BC8E69 /* Pods-KicauanTests.release.xcconfig */,
-				7B5629F24D3F0EB28220142B /* Pods-KicauanUITests.debug.xcconfig */,
-				CE96301D57E5DC8A088756F3 /* Pods-KicauanUITests.release.xcconfig */,
+				600CC1251FD16FD600AFBE56 /* Info.plist */,
+				600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */,
+			);
+			path = KicauanIntegrationTests;
+			sourceTree = "<group>";
+		};
+		600CC12D1FD188F100AFBE56 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */,
+				600CC1301FD18A5900AFBE56 /* TwitterSession.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		6015630DBC675569D6EEE7BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5810763CC8643D4AE0FDB711 /* Pods-Kicauan.debug.xcconfig */,
+				54E5E1972BF43955A530F3DA /* Pods-Kicauan.release.xcconfig */,
+				CBDE6095C6FC737238E21D09 /* Pods-KicauanTests.debug.xcconfig */,
+				0082DE9C0A81F7253D5771E0 /* Pods-KicauanTests.release.xcconfig */,
+				B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */,
+				C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */,
+				06FA77195A5200553F6EF328 /* Pods-KicauanIntegrationTests.debug.xcconfig */,
+				B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -190,12 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 600CC1141FD0E50B00AFBE56 /* Build configuration list for PBXNativeTarget "Kicauan" */;
 			buildPhases = (
-				65087864F831B1D11DB2F70C /* [CP] Check Pods Manifest.lock */,
+				0DEC40F815FAD99BA356EE93 /* [CP] Check Pods Manifest.lock */,
 				600CC0E81FD0E50A00AFBE56 /* Sources */,
 				600CC0E91FD0E50A00AFBE56 /* Frameworks */,
 				600CC0EA1FD0E50A00AFBE56 /* Resources */,
-				8C335787B589B0990EEE5366 /* [CP] Embed Pods Frameworks */,
-				FE33D561C7542F51A1497E37 /* [CP] Copy Pods Resources */,
+				57D17B7D1265ACF9E36993BB /* [CP] Embed Pods Frameworks */,
+				B819F5114097892196180923 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,12 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 600CC1171FD0E50B00AFBE56 /* Build configuration list for PBXNativeTarget "KicauanTests" */;
 			buildPhases = (
-				D1BC2B21EE6AC842116094E1 /* [CP] Check Pods Manifest.lock */,
+				3D612930476386874EC5D337 /* [CP] Check Pods Manifest.lock */,
 				600CC0FC1FD0E50A00AFBE56 /* Sources */,
 				600CC0FD1FD0E50A00AFBE56 /* Frameworks */,
 				600CC0FE1FD0E50A00AFBE56 /* Resources */,
-				07A57C8E8A4B7D00452C5EFA /* [CP] Embed Pods Frameworks */,
-				ACF0EACED96EB97FE2379111 /* [CP] Copy Pods Resources */,
+				D81D1BD9263C4544B2D4B674 /* [CP] Embed Pods Frameworks */,
+				910AD8ECCB663D6DEE292C71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,12 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 600CC11A1FD0E50B00AFBE56 /* Build configuration list for PBXNativeTarget "KicauanUITests" */;
 			buildPhases = (
-				2E6576EE95C0ACC5186E3B62 /* [CP] Check Pods Manifest.lock */,
+				FBE1597E1A4BFA7F1DEDD68C /* [CP] Check Pods Manifest.lock */,
 				600CC1071FD0E50A00AFBE56 /* Sources */,
 				600CC1081FD0E50A00AFBE56 /* Frameworks */,
 				600CC1091FD0E50A00AFBE56 /* Resources */,
-				4DFFDCD36AC9B2A23C277799 /* [CP] Embed Pods Frameworks */,
-				6576FB657151203DFB2E51E3 /* [CP] Copy Pods Resources */,
+				94FAB1DD60702CA9C89548C4 /* [CP] Embed Pods Frameworks */,
+				EAEDFABDAA82204E375881E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,6 +280,27 @@
 			productName = TweetlyUITests;
 			productReference = 600CC10B1FD0E50A00AFBE56 /* KicauanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		600CC1201FD16FD600AFBE56 /* KicauanIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600CC1281FD16FD600AFBE56 /* Build configuration list for PBXNativeTarget "KicauanIntegrationTests" */;
+			buildPhases = (
+				D8340B7778E6A06D7C57E1EB /* [CP] Check Pods Manifest.lock */,
+				600CC11D1FD16FD600AFBE56 /* Sources */,
+				600CC11E1FD16FD600AFBE56 /* Frameworks */,
+				600CC11F1FD16FD600AFBE56 /* Resources */,
+				417771C1A2F25791930A8615 /* [CP] Embed Pods Frameworks */,
+				9AD933B0AAF7C3EEF702170F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				600CC1271FD16FD600AFBE56 /* PBXTargetDependency */,
+			);
+			name = KicauanIntegrationTests;
+			productName = KicauanIntegrationTests;
+			productReference = 600CC1211FD16FD600AFBE56 /* KicauanIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -272,6 +326,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 600CC0EB1FD0E50A00AFBE56;
 					};
+					600CC1201FD16FD600AFBE56 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 600CC0EB1FD0E50A00AFBE56;
+					};
 				};
 			};
 			buildConfigurationList = 600CC0E71FD0E50A00AFBE56 /* Build configuration list for PBXProject "Kicauan" */;
@@ -290,6 +349,7 @@
 				600CC0EB1FD0E50A00AFBE56 /* Kicauan */,
 				600CC0FF1FD0E50A00AFBE56 /* KicauanTests */,
 				600CC10A1FD0E50A00AFBE56 /* KicauanUITests */,
+				600CC1201FD16FD600AFBE56 /* KicauanIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,25 +379,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		600CC11F1FD16FD600AFBE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07A57C8E8A4B7D00452C5EFA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E6576EE95C0ACC5186E3B62 /* [CP] Check Pods Manifest.lock */ = {
+		0DEC40F815FAD99BA356EE93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,22 +404,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4DFFDCD36AC9B2A23C277799 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65087864F831B1D11DB2F70C /* [CP] Check Pods Manifest.lock */ = {
+		3D612930476386874EC5D337 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,22 +419,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6576FB657151203DFB2E51E3 /* [CP] Copy Pods Resources */ = {
+		417771C1A2F25791930A8615 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C335787B589B0990EEE5366 /* [CP] Embed Pods Frameworks */ = {
+		57D17B7D1265ACF9E36993BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,7 +449,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ACF0EACED96EB97FE2379111 /* [CP] Copy Pods Resources */ = {
+		910AD8ECCB663D6DEE292C71 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,22 +464,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1BC2B21EE6AC842116094E1 /* [CP] Check Pods Manifest.lock */ = {
+		94FAB1DD60702CA9C89548C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE33D561C7542F51A1497E37 /* [CP] Copy Pods Resources */ = {
+		9AD933B0AAF7C3EEF702170F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B819F5114097892196180923 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,6 +509,66 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D81D1BD9263C4544B2D4B674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanTests/Pods-KicauanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8340B7778E6A06D7C57E1EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEDFABDAA82204E375881E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE1597E1A4BFA7F1DEDD68C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -465,6 +577,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				600CC0F21FD0E50A00AFBE56 /* ViewController.swift in Sources */,
+				600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */,
+				600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */,
 				600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +599,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		600CC11D1FD16FD600AFBE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600CC12C1FD1700900AFBE56 /* TwitterAuthenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -497,6 +619,11 @@
 			isa = PBXTargetDependency;
 			target = 600CC0EB1FD0E50A00AFBE56 /* Kicauan */;
 			targetProxy = 600CC10C1FD0E50A00AFBE56 /* PBXContainerItemProxy */;
+		};
+		600CC1271FD16FD600AFBE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600CC0EB1FD0E50A00AFBE56 /* Kicauan */;
+			targetProxy = 600CC1261FD16FD600AFBE56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,12 +756,13 @@
 		};
 		600CC1151FD0E50B00AFBE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7330305F09662D5F214328B6 /* Pods-Kicauan.debug.xcconfig */;
+			baseConfigurationReference = 5810763CC8643D4AE0FDB711 /* Pods-Kicauan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62G3JZ25AL;
 				INFOPLIST_FILE = Kicauan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denizakya.Kicauan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -645,12 +773,13 @@
 		};
 		600CC1161FD0E50B00AFBE56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419F6643061BE83EC676AE94 /* Pods-Kicauan.release.xcconfig */;
+			baseConfigurationReference = 54E5E1972BF43955A530F3DA /* Pods-Kicauan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62G3JZ25AL;
 				INFOPLIST_FILE = Kicauan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denizakya.Kicauan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -661,7 +790,7 @@
 		};
 		600CC1181FD0E50B00AFBE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA42EC117C67748594E8B17C /* Pods-KicauanTests.debug.xcconfig */;
+			baseConfigurationReference = CBDE6095C6FC737238E21D09 /* Pods-KicauanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +808,7 @@
 		};
 		600CC1191FD0E50B00AFBE56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6488BD89B0A326B839BC8E69 /* Pods-KicauanTests.release.xcconfig */;
+			baseConfigurationReference = 0082DE9C0A81F7253D5771E0 /* Pods-KicauanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,7 +826,7 @@
 		};
 		600CC11B1FD0E50B00AFBE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B5629F24D3F0EB28220142B /* Pods-KicauanUITests.debug.xcconfig */;
+			baseConfigurationReference = B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,7 +844,7 @@
 		};
 		600CC11C1FD0E50B00AFBE56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE96301D57E5DC8A088756F3 /* Pods-KicauanUITests.release.xcconfig */;
+			baseConfigurationReference = C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -728,6 +857,40 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Kicauan;
+			};
+			name = Release;
+		};
+		600CC1291FD16FD600AFBE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FA77195A5200553F6EF328 /* Pods-KicauanIntegrationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62G3JZ25AL;
+				INFOPLIST_FILE = KicauanIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizakya.KicauanIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kicauan.app/Kicauan";
+			};
+			name = Debug;
+		};
+		600CC12A1FD16FD600AFBE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62G3JZ25AL;
+				INFOPLIST_FILE = KicauanIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizakya.KicauanIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kicauan.app/Kicauan";
 			};
 			name = Release;
 		};
@@ -766,6 +929,15 @@
 			buildConfigurations = (
 				600CC11B1FD0E50B00AFBE56 /* Debug */,
 				600CC11C1FD0E50B00AFBE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600CC1281FD16FD600AFBE56 /* Build configuration list for PBXNativeTarget "KicauanIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600CC1291FD16FD600AFBE56 /* Debug */,
+				600CC12A1FD16FD600AFBE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -59,6 +59,16 @@
                </Test>
             </SkippedTests>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "600CC1201FD16FD600AFBE56"
+               BuildableName = "KicauanIntegrationTests.xctest"
+               BlueprintName = "KicauanIntegrationTests"
+               ReferencedContainer = "container:Kicauan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
