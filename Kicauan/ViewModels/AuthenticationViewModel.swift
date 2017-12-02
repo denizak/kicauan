@@ -9,6 +9,7 @@
 import Foundation
 
 import RxSwift
+import RxCocoa
 
 struct AuthenticationViewModel {
     
@@ -23,6 +24,10 @@ struct AuthenticationViewModel {
     
     var authenticationSuccessEvent: Observable<Bool> {
         return authenticationSuccess
+    }
+    
+    var isAuthenticated: Bool {
+        return self.authenticate.isAuthenticated
     }
     
     init(authenticate: AuthenticateProtocol) {

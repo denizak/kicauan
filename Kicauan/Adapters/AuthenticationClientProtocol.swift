@@ -7,6 +7,8 @@
 //
 
 protocol AuthenticationClientProtocol {
+    var isLoggedIn: Bool { get }
+    
     func login(_ completion: @escaping (_ session: TwitterSession) -> Void)
     func logout(_ session: TwitterSession)
 }

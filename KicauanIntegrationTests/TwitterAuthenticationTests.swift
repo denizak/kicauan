@@ -24,4 +24,8 @@ class TwitterAuthenticationTests: XCTestCase {
         waitForExpectations(timeout: 160, handler: nil)
     }
     
+    func testIsLoggedIn() {
+        let twitterAuth = TwitterAuthentication()
+        XCTAssertTrue(twitterAuth.isLoggedIn)
+    }
 }

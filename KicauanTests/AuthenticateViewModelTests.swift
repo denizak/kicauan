@@ -16,14 +16,20 @@ class AuthenticateViewModelTests: XCTestCase {
         func login(_ completion: @escaping (Bool, Session) -> Void) {
             completion(true, Session(token: "token", secret: "secret", userID: "100"))
         }
+        
+        var isAuthenticated: Bool { return true }
+    }
+    
+    let authenticate = AuthenticateSuccessMock()
+    var authViewModel: AuthenticationViewModel!
+    
+    override func setUp() {
+        authViewModel = AuthenticationViewModel(authenticate: authenticate)
     }
     
     func testLogin() {
         let expectAuthentication = expectation(description: "authentication")
         let expectShowLoading = expectation(description: "loading")
-        
-        let authenticate = AuthenticateSuccessMock()
-        let authViewModel = AuthenticationViewModel(authenticate: authenticate)
         
         let loadingDisposable = authViewModel.showLoadingEvent
             .subscribe(onNext: { show in
@@ -44,6 +50,10 @@ class AuthenticateViewModelTests: XCTestCase {
         
         loadingDisposable.dispose()
         authenticationDisposable.dispose()
+    }
+    
+    func testIsAuthenticated() {
+        XCTAssertTrue(authViewModel.isAuthenticated)
     }
     
 }

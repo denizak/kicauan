@@ -9,12 +9,17 @@
 import Foundation
 
 protocol AuthenticateProtocol {
+    var isAuthenticated: Bool { get }
     func login(_ completion: @escaping (_ success: Bool, _ session: Session) -> Void)
 }
 
 struct Authenticate : AuthenticateProtocol {
     
     private let authenticationClient: AuthenticationClientProtocol
+    
+    var isAuthenticated: Bool {
+        return self.authenticationClient.isLoggedIn
+    }
     
     init(authenticationClient: AuthenticationClientProtocol) {
         self.authenticationClient = authenticationClient

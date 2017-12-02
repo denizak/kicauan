@@ -15,6 +15,8 @@ class AuthenticateTests: XCTestCase {
     
     class AuthenticationClient : AuthenticationClientProtocol {
         
+        var isLoggedIn: Bool { return true }
+        
         func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
             completion(TwitterSession(token: "", secret: "", userName: "", userID: AuthenticateTests.userID))
         }
@@ -22,11 +24,15 @@ class AuthenticateTests: XCTestCase {
         func logout(_ session: TwitterSession) {}
     }
     
+    let authClient = AuthenticationClient()
+    var authenticate: Authenticate!
+    
+    override func setUp() {
+        authenticate = Authenticate(authenticationClient: authClient)
+    }
+    
     func testLogin() {
         let expect = expectation(description: "login")
-        
-        let authClient = AuthenticationClient()
-        let authenticate = Authenticate(authenticationClient: authClient)
         
         authenticate.login { (success, session) in
             expect.fulfill()
@@ -38,6 +44,8 @@ class AuthenticateTests: XCTestCase {
         waitForExpectations(timeout: 1, handler: nil)
     }
     
-    
+    func testIsAuthenticated() {
+        XCTAssertTrue(authenticate.isAuthenticated)
+    }
     
 }

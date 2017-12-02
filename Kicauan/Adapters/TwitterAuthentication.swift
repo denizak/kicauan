@@ -9,6 +9,12 @@
 import TwitterKit
 
 struct TwitterAuthentication : AuthenticationClientProtocol {
+    var isLoggedIn: Bool {
+        let sessionStore = Twitter.sharedInstance().sessionStore
+        guard let _ = sessionStore.session() else { return false }
+        return true
+    }
+    
     func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
         Twitter.sharedInstance().logIn(completion: { (session, error) in
             if let session = session {
