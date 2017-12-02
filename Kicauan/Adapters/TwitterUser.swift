@@ -22,4 +22,8 @@ extension TwitterUser {
         return TwitterUser(userID: user.userID, name: user.name, userName: user.screenName, formattedScreenName: user.formattedScreenName, profileImageURL: user.profileImageURL)
     }
     
+    func toUser() -> User {
+        return User(userID: userID, name: name, formattedScreenName: formattedScreenName, profileImageURL: profileImageURL)
+    }
+    
 }

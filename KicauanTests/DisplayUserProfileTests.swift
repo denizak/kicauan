@@ -20,13 +20,18 @@ class DisplayUserProfileTests: XCTestCase {
     }
     
     func testGetUserProfile() {
+        let expect = expectation(description: "user profile")
         let userProfileClient = UserProfileClient()
         let displayUserProfile = DisplayUserProfile(userProfileClient: userProfileClient)
         
         let session = Session(token: "", secret: "", userID: DisplayUserProfileTests.userID)
         displayUserProfile.getUserProfile(session) { user in
+            expect.fulfill()
+            
             XCTAssertEqual(user.userID, DisplayUserProfileTests.userID)
         }
+        
+        waitForExpectations(timeout: 1, handler: nil)
     }
     
 }

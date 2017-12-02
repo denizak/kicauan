@@ -21,6 +21,8 @@ struct DisplayUserProfile : DisplayUserProfileProtocol {
     }
     
     func getUserProfile(_ session: Session, _ completion: @escaping (User) -> Void) {
-        
+        userProfileClient.getCurrentUserProfile(with: session.userID) { user in
+            completion(user.toUser())
+        }
     }
 }

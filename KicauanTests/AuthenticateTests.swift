@@ -23,14 +23,19 @@ class AuthenticateTests: XCTestCase {
     }
     
     func testLogin() {
+        let expect = expectation(description: "login")
+        
         let authClient = AuthenticationClient()
         let authenticate = Authenticate(authenticationClient: authClient)
         
         authenticate.login { (success, session) in
+            expect.fulfill()
+            
             XCTAssertTrue(success)
             XCTAssertEqual(session.userID, AuthenticateTests.userID)
         }
         
+        waitForExpectations(timeout: 1, handler: nil)
     }
     
     
