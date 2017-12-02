@@ -19,9 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        Twitter.sharedInstance().start(withConsumerKey:consumerKey, consumerSecret:consumerSecret)
+        initiateTwitterClient()
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return Twitter.sharedInstance().application(app, open: url, options: options)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -46,6 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    //MARK: -
 
+    func initiateTwitterClient() {
+        Twitter.sharedInstance().start(withConsumerKey:consumerKey, consumerSecret:consumerSecret)
+    }
 }
 
