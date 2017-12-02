@@ -19,6 +19,7 @@ class TwitterAuthenticationTests: XCTestCase {
         let twitterAuth = TwitterAuthentication()
         twitterAuth.login { session in
             XCTAssertFalse(session.userName.isEmpty)
+            
             expect.fulfill()
         }
         

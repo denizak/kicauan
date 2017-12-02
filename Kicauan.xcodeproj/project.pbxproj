@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		132A614DEFC2988B49D5CC83 /* Pods_KicauanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A60AE85FE625EE3B062383 /* Pods_KicauanUITests.framework */; };
 		600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */; };
-		600CC0F21FD0E50A00AFBE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC0F11FD0E50A00AFBE56 /* ViewController.swift */; };
 		600CC0F51FD0E50A00AFBE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F31FD0E50A00AFBE56 /* Main.storyboard */; };
 		600CC0F71FD0E50A00AFBE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F61FD0E50A00AFBE56 /* Assets.xcassets */; };
 		600CC0FA1FD0E50A00AFBE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F81FD0E50A00AFBE56 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		600CC12C1FD1700900AFBE56 /* TwitterAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */; };
 		600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */; };
 		600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1301FD18A5900AFBE56 /* TwitterSession.swift */; };
+		600CC1371FD2637300AFBE56 /* TwitterUserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1361FD2637300AFBE56 /* TwitterUserProfileTests.swift */; };
+		600CC1391FD2670300AFBE56 /* TwitterUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */; };
+		600CC13B1FD2673E00AFBE56 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */; };
 		7D8BCFB951D1AFA3CB8C01F3 /* Pods_KicauanIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */; };
 		8345A5324BD97F9F2CB5BC48 /* Pods_KicauanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */; };
 		F68A174F33D9E688AA26C9C4 /* Pods_Kicauan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */; };
@@ -56,7 +58,6 @@
 		5810763CC8643D4AE0FDB711 /* Pods-Kicauan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kicauan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kicauan/Pods-Kicauan.debug.xcconfig"; sourceTree = "<group>"; };
 		600CC0EC1FD0E50A00AFBE56 /* Kicauan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kicauan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		600CC0F11FD0E50A00AFBE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		600CC0F41FD0E50A00AFBE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		600CC0F61FD0E50A00AFBE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		600CC0F91FD0E50A00AFBE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +73,9 @@
 		600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticationTests.swift; sourceTree = "<group>"; };
 		600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthentication.swift; sourceTree = "<group>"; };
 		600CC1301FD18A5900AFBE56 /* TwitterSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSession.swift; sourceTree = "<group>"; };
+		600CC1361FD2637300AFBE56 /* TwitterUserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUserProfileTests.swift; sourceTree = "<group>"; };
+		600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUserProfile.swift; sourceTree = "<group>"; };
+		600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
 		B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,12 +158,13 @@
 		600CC0EE1FD0E50A00AFBE56 /* Kicauan */ = {
 			isa = PBXGroup;
 			children = (
+				600CC1351FD2319600AFBE56 /* ViewModels */,
+				600CC1341FD2318E00AFBE56 /* Interactors */,
+				600CC1331FD2318800AFBE56 /* Entities */,
+				600CC1321FD2317600AFBE56 /* Storyboards */,
 				600CC12D1FD188F100AFBE56 /* Adapters */,
 				600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */,
-				600CC0F11FD0E50A00AFBE56 /* ViewController.swift */,
-				600CC0F31FD0E50A00AFBE56 /* Main.storyboard */,
 				600CC0F61FD0E50A00AFBE56 /* Assets.xcassets */,
-				600CC0F81FD0E50A00AFBE56 /* LaunchScreen.storyboard */,
 				600CC0FB1FD0E50A00AFBE56 /* Info.plist */,
 			);
 			path = Kicauan;
@@ -188,6 +193,7 @@
 			children = (
 				600CC1251FD16FD600AFBE56 /* Info.plist */,
 				600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */,
+				600CC1361FD2637300AFBE56 /* TwitterUserProfileTests.swift */,
 			);
 			path = KicauanIntegrationTests;
 			sourceTree = "<group>";
@@ -197,8 +203,40 @@
 			children = (
 				600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */,
 				600CC1301FD18A5900AFBE56 /* TwitterSession.swift */,
+				600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */,
+				600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */,
 			);
 			path = Adapters;
+			sourceTree = "<group>";
+		};
+		600CC1321FD2317600AFBE56 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				600CC0F31FD0E50A00AFBE56 /* Main.storyboard */,
+				600CC0F81FD0E50A00AFBE56 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		600CC1331FD2318800AFBE56 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		600CC1341FD2318E00AFBE56 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		600CC1351FD2319600AFBE56 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		6015630DBC675569D6EEE7BB /* Pods */ = {
@@ -576,9 +614,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600CC0F21FD0E50A00AFBE56 /* ViewController.swift in Sources */,
+				600CC13B1FD2673E00AFBE56 /* TwitterUser.swift in Sources */,
 				600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */,
 				600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */,
+				600CC1391FD2670300AFBE56 /* TwitterUserProfile.swift in Sources */,
 				600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600CC1371FD2637300AFBE56 /* TwitterUserProfileTests.swift in Sources */,
 				600CC12C1FD1700900AFBE56 /* TwitterAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

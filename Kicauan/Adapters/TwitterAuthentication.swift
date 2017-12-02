@@ -11,6 +11,7 @@ import TwitterKit
 
 protocol TwitterAuthenticationProtocol {
     func login(_ completion: @escaping (_ session: TwitterSession) -> Void)
+    func logout(_ session: TwitterSession)
 }
 
 struct TwitterAuthentication : TwitterAuthenticationProtocol {
@@ -22,5 +23,13 @@ struct TwitterAuthentication : TwitterAuthenticationProtocol {
                 print("error: \(error.localizedDescription)");
             }
         })
+    }
+    
+    func logout(_ session: TwitterSession) {
+        let sessionStore = Twitter.sharedInstance().sessionStore
+        
+        if let userID = sessionStore.session()?.userID, session.userID == userID {
+            sessionStore.logOutUserID(userID)
+        }
     }
 }
