@@ -6,7 +6,6 @@
 //  Copyright © 2017 deni zakya. All rights reserved.
 //
 
-import Foundation
 import TwitterKit
 
 struct TwitterUser {

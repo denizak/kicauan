@@ -6,7 +6,6 @@
 //  Copyright © 2017 deni zakya. All rights reserved.
 //
 
-import Foundation
 import TwitterKit
 
 struct TwitterSession {
@@ -22,4 +21,7 @@ extension TwitterSession {
         return TwitterSession(token: session.authToken, secret: session.authTokenSecret, userName: session.userName, userID: session.userID)
     }
     
+    func toSession() -> Session {
+        return Session(token: token, secret: secret, userID: userID)
+    }
 }

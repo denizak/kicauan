@@ -6,15 +6,9 @@
 //  Copyright © 2017 deni zakya. All rights reserved.
 //
 
-import Foundation
-
 import TwitterKit
 
-protocol TwitterUserProfileProtocol {
-    func getCurrentUserProfile(with userID: String, _ completion: @escaping (_ user: TwitterUser) -> Void)
-}
-
-struct TwitterUserProfile: TwitterUserProfileProtocol {
+struct TwitterUserProfile: UserProfileClientProtocol {
     func getCurrentUserProfile(with userID: String, _ completion: @escaping (TwitterUser) -> Void) {
         TWTRAPIClient.withCurrentUser().loadUser(withID: userID) { (user, error) in
             guard let user = user else { return }

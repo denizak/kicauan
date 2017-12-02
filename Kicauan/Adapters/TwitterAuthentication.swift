@@ -6,15 +6,9 @@
 //  Copyright © 2017 deni zakya. All rights reserved.
 //
 
-import Foundation
 import TwitterKit
 
-protocol TwitterAuthenticationProtocol {
-    func login(_ completion: @escaping (_ session: TwitterSession) -> Void)
-    func logout(_ session: TwitterSession)
-}
-
-struct TwitterAuthentication : TwitterAuthenticationProtocol {
+struct TwitterAuthentication : AuthenticationClientProtocol {
     func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
         Twitter.sharedInstance().logIn(completion: { (session, error) in
             if let session = session {

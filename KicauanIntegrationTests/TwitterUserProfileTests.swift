@@ -8,8 +8,6 @@
 
 import XCTest
 
-import TwitterKit
-
 @testable import Kicauan
 class TwitterUserProfileTests: XCTestCase {
     

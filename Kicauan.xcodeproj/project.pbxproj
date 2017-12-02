@@ -12,7 +12,6 @@
 		600CC0F51FD0E50A00AFBE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F31FD0E50A00AFBE56 /* Main.storyboard */; };
 		600CC0F71FD0E50A00AFBE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F61FD0E50A00AFBE56 /* Assets.xcassets */; };
 		600CC0FA1FD0E50A00AFBE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600CC0F81FD0E50A00AFBE56 /* LaunchScreen.storyboard */; };
-		600CC1051FD0E50A00AFBE56 /* KicauanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1041FD0E50A00AFBE56 /* KicauanTests.swift */; };
 		600CC1101FD0E50A00AFBE56 /* KicauanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC10F1FD0E50A00AFBE56 /* KicauanUITests.swift */; };
 		600CC12C1FD1700900AFBE56 /* TwitterAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12B1FD1700900AFBE56 /* TwitterAuthenticationTests.swift */; };
 		600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC12E1FD1892800AFBE56 /* TwitterAuthentication.swift */; };
@@ -20,6 +19,14 @@
 		600CC1371FD2637300AFBE56 /* TwitterUserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1361FD2637300AFBE56 /* TwitterUserProfileTests.swift */; };
 		600CC1391FD2670300AFBE56 /* TwitterUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */; };
 		600CC13B1FD2673E00AFBE56 /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */; };
+		600CC13D1FD26ACE00AFBE56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC13C1FD26ACE00AFBE56 /* User.swift */; };
+		600CC13F1FD26AEB00AFBE56 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC13E1FD26AEB00AFBE56 /* Session.swift */; };
+		600CC1431FD26B9300AFBE56 /* AuthenticateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1421FD26B9300AFBE56 /* AuthenticateTests.swift */; };
+		600CC1451FD26C8C00AFBE56 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1441FD26C8C00AFBE56 /* Authenticate.swift */; };
+		600CC1471FD26D6E00AFBE56 /* AuthenticationClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1461FD26D6E00AFBE56 /* AuthenticationClientProtocol.swift */; };
+		60B9FF871FD27BE400B2FEA9 /* DisplayUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF861FD27BE400B2FEA9 /* DisplayUserProfile.swift */; };
+		60B9FF891FD27C6900B2FEA9 /* DisplayUserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF881FD27C6900B2FEA9 /* DisplayUserProfileTests.swift */; };
+		60B9FF8B1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF8A1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift */; };
 		7D8BCFB951D1AFA3CB8C01F3 /* Pods_KicauanIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */; };
 		8345A5324BD97F9F2CB5BC48 /* Pods_KicauanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */; };
 		F68A174F33D9E688AA26C9C4 /* Pods_Kicauan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */; };
@@ -63,7 +70,6 @@
 		600CC0F91FD0E50A00AFBE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		600CC0FB1FD0E50A00AFBE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600CC1001FD0E50A00AFBE56 /* KicauanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KicauanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		600CC1041FD0E50A00AFBE56 /* KicauanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KicauanTests.swift; sourceTree = "<group>"; };
 		600CC1061FD0E50A00AFBE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		600CC10B1FD0E50A00AFBE56 /* KicauanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KicauanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CC10F1FD0E50A00AFBE56 /* KicauanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KicauanUITests.swift; sourceTree = "<group>"; };
@@ -76,6 +82,14 @@
 		600CC1361FD2637300AFBE56 /* TwitterUserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUserProfileTests.swift; sourceTree = "<group>"; };
 		600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUserProfile.swift; sourceTree = "<group>"; };
 		600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
+		600CC13C1FD26ACE00AFBE56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		600CC13E1FD26AEB00AFBE56 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		600CC1421FD26B9300AFBE56 /* AuthenticateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateTests.swift; sourceTree = "<group>"; };
+		600CC1441FD26C8C00AFBE56 /* Authenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
+		600CC1461FD26D6E00AFBE56 /* AuthenticationClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClientProtocol.swift; sourceTree = "<group>"; };
+		60B9FF861FD27BE400B2FEA9 /* DisplayUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUserProfile.swift; sourceTree = "<group>"; };
+		60B9FF881FD27C6900B2FEA9 /* DisplayUserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUserProfileTests.swift; sourceTree = "<group>"; };
+		60B9FF8A1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileClientProtocol.swift; sourceTree = "<group>"; };
 		B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,8 +187,9 @@
 		600CC1031FD0E50A00AFBE56 /* KicauanTests */ = {
 			isa = PBXGroup;
 			children = (
-				600CC1041FD0E50A00AFBE56 /* KicauanTests.swift */,
 				600CC1061FD0E50A00AFBE56 /* Info.plist */,
+				600CC1421FD26B9300AFBE56 /* AuthenticateTests.swift */,
+				60B9FF881FD27C6900B2FEA9 /* DisplayUserProfileTests.swift */,
 			);
 			path = KicauanTests;
 			sourceTree = "<group>";
@@ -205,6 +220,8 @@
 				600CC1301FD18A5900AFBE56 /* TwitterSession.swift */,
 				600CC1381FD2670300AFBE56 /* TwitterUserProfile.swift */,
 				600CC13A1FD2673E00AFBE56 /* TwitterUser.swift */,
+				600CC1461FD26D6E00AFBE56 /* AuthenticationClientProtocol.swift */,
+				60B9FF8A1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -221,6 +238,8 @@
 		600CC1331FD2318800AFBE56 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				600CC13C1FD26ACE00AFBE56 /* User.swift */,
+				600CC13E1FD26AEB00AFBE56 /* Session.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -228,6 +247,8 @@
 		600CC1341FD2318E00AFBE56 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				600CC1441FD26C8C00AFBE56 /* Authenticate.swift */,
+				60B9FF861FD27BE400B2FEA9 /* DisplayUserProfile.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -614,8 +635,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600CC13F1FD26AEB00AFBE56 /* Session.swift in Sources */,
+				60B9FF8B1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift in Sources */,
+				600CC1471FD26D6E00AFBE56 /* AuthenticationClientProtocol.swift in Sources */,
 				600CC13B1FD2673E00AFBE56 /* TwitterUser.swift in Sources */,
+				60B9FF871FD27BE400B2FEA9 /* DisplayUserProfile.swift in Sources */,
 				600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */,
+				600CC13D1FD26ACE00AFBE56 /* User.swift in Sources */,
+				600CC1451FD26C8C00AFBE56 /* Authenticate.swift in Sources */,
 				600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */,
 				600CC1391FD2670300AFBE56 /* TwitterUserProfile.swift in Sources */,
 				600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */,
@@ -626,7 +653,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600CC1051FD0E50A00AFBE56 /* KicauanTests.swift in Sources */,
+				600CC1431FD26B9300AFBE56 /* AuthenticateTests.swift in Sources */,
+				60B9FF891FD27C6900B2FEA9 /* DisplayUserProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
