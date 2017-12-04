@@ -19,11 +19,11 @@ struct AuthenticationViewModel {
     private let authenticationSuccess = PublishSubject<Bool>()
     
     var showLoadingEvent: Observable<Bool> {
-        return showLoading
+        return showLoading.asObservable()
     }
     
     var authenticationSuccessEvent: Observable<Bool> {
-        return authenticationSuccess
+        return authenticationSuccess.asObservable()
     }
     
     var isAuthenticated: Bool {
@@ -32,6 +32,10 @@ struct AuthenticationViewModel {
     
     init(authenticate: AuthenticateProtocol) {
         self.authenticate = authenticate
+    }
+    
+    func viewAppear() {
+        authenticationSuccess.onNext(isAuthenticated)
     }
     
     func login() {

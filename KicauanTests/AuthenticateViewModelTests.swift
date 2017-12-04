@@ -52,6 +52,21 @@ class AuthenticateViewModelTests: XCTestCase {
         authenticationDisposable.dispose()
     }
     
+    func testViewAppear() {
+        let expect = expectation(description: "viewAppear")
+        let disposable = authViewModel.authenticationSuccessEvent.subscribe(onNext: { (isAuthenticated) in
+            expect.fulfill()
+            
+            XCTAssertTrue(isAuthenticated)
+        })
+        
+        authViewModel.viewAppear()
+        
+        waitForExpectations(timeout: 1, handler: nil)
+        
+        disposable.dispose()
+    }
+    
     func testIsAuthenticated() {
         XCTAssertTrue(authViewModel.isAuthenticated)
     }
