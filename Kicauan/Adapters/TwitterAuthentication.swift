@@ -15,6 +15,13 @@ struct TwitterAuthentication : AuthenticationClientProtocol {
         return true
     }
     
+    var currentSession: TwitterSession? {
+        let sessionStore = Twitter.sharedInstance().sessionStore
+        guard let session = sessionStore.session() else { return nil }
+        
+        return TwitterSession.fromTwitter(session)
+    }
+    
     func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
         Twitter.sharedInstance().logIn(completion: { (session, error) in
             if let session = session {

@@ -11,14 +11,13 @@ import TwitterKit
 struct TwitterSession {
     let token: String
     let secret: String
-    let userName: String
     let userID: String
 }
 
 extension TwitterSession {
     
-    static func fromTwitter(_ session: TWTRSession) -> TwitterSession {
-        return TwitterSession(token: session.authToken, secret: session.authTokenSecret, userName: session.userName, userID: session.userID)
+    static func fromTwitter(_ session: TWTRAuthSession) -> TwitterSession {
+        return TwitterSession(token: session.authToken, secret: session.authTokenSecret, userID: session.userID)
     }
     
     func toSession() -> Session {

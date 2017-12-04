@@ -16,7 +16,7 @@ class TwitterAuthenticationTests: XCTestCase {
         
         let twitterAuth = TwitterAuthentication()
         twitterAuth.login { session in
-            XCTAssertFalse(session.userName.isEmpty)
+            XCTAssertFalse(session.userID.isEmpty)
             
             expect.fulfill()
         }
@@ -27,5 +27,11 @@ class TwitterAuthenticationTests: XCTestCase {
     func testIsLoggedIn() {
         let twitterAuth = TwitterAuthentication()
         XCTAssertTrue(twitterAuth.isLoggedIn)
+    }
+    
+    func testGetCurrentSession() {
+        let twitterAuth = TwitterAuthentication()
+        XCTAssertNotNil(twitterAuth.currentSession)
+        XCTAssertFalse(twitterAuth.currentSession!.userID.isEmpty)
     }
 }
