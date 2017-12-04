@@ -29,6 +29,11 @@
 		60B9FF8B1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF8A1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift */; };
 		60B9FF8D1FD2AE9B00B2FEA9 /* AuthenticateViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF8C1FD2AE9B00B2FEA9 /* AuthenticateViewModelTests.swift */; };
 		60B9FF8F1FD2AF7900B2FEA9 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF8E1FD2AF7900B2FEA9 /* AuthenticationViewModel.swift */; };
+		60B9FF921FD2BD0400B2FEA9 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9FF911FD2BD0400B2FEA9 /* TimelineViewController.swift */; };
+		60C20BE01FD2BF2E0087E67A /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C20BDF1FD2BF2E0087E67A /* Injection.swift */; };
+		60C20BE21FD2CAFE0087E67A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C20BE11FD2CAFE0087E67A /* MainNavigationController.swift */; };
+		60C20BE61FD2CE450087E67A /* DisplayUserProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C20BE51FD2CE450087E67A /* DisplayUserProfileViewModelTests.swift */; };
+		60C20BE81FD2D1330087E67A /* DisplayUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C20BE71FD2D1330087E67A /* DisplayUserProfileViewModel.swift */; };
 		7D8BCFB951D1AFA3CB8C01F3 /* Pods_KicauanIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31052037CF0C96234DB1AD13 /* Pods_KicauanIntegrationTests.framework */; };
 		8345A5324BD97F9F2CB5BC48 /* Pods_KicauanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC77CA6E5F9A2299428E1878 /* Pods_KicauanTests.framework */; };
 		F68A174F33D9E688AA26C9C4 /* Pods_Kicauan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF31B792F4B7EF2F47FDE2DF /* Pods_Kicauan.framework */; };
@@ -94,6 +99,11 @@
 		60B9FF8A1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileClientProtocol.swift; sourceTree = "<group>"; };
 		60B9FF8C1FD2AE9B00B2FEA9 /* AuthenticateViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModelTests.swift; sourceTree = "<group>"; };
 		60B9FF8E1FD2AF7900B2FEA9 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		60B9FF911FD2BD0400B2FEA9 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		60C20BDF1FD2BF2E0087E67A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		60C20BE11FD2CAFE0087E67A /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		60C20BE51FD2CE450087E67A /* DisplayUserProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUserProfileViewModelTests.swift; sourceTree = "<group>"; };
+		60C20BE71FD2D1330087E67A /* DisplayUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUserProfileViewModel.swift; sourceTree = "<group>"; };
 		B8E3F79A72861222B8EBB1D0 /* Pods-KicauanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanIntegrationTests/Pods-KicauanIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6009A2F662C4577FDDFCE47 /* Pods-KicauanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KicauanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KicauanUITests/Pods-KicauanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +186,7 @@
 		600CC0EE1FD0E50A00AFBE56 /* Kicauan */ = {
 			isa = PBXGroup;
 			children = (
+				60B9FF901FD2BCEB00B2FEA9 /* ViewControllers */,
 				600CC1351FD2319600AFBE56 /* ViewModels */,
 				600CC1341FD2318E00AFBE56 /* Interactors */,
 				600CC1331FD2318800AFBE56 /* Entities */,
@@ -184,6 +195,7 @@
 				600CC0EF1FD0E50A00AFBE56 /* AppDelegate.swift */,
 				600CC0F61FD0E50A00AFBE56 /* Assets.xcassets */,
 				600CC0FB1FD0E50A00AFBE56 /* Info.plist */,
+				60C20BDF1FD2BF2E0087E67A /* Injection.swift */,
 			);
 			path = Kicauan;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 				600CC1421FD26B9300AFBE56 /* AuthenticateTests.swift */,
 				60B9FF881FD27C6900B2FEA9 /* DisplayUserProfileTests.swift */,
 				60B9FF8C1FD2AE9B00B2FEA9 /* AuthenticateViewModelTests.swift */,
+				60C20BE51FD2CE450087E67A /* DisplayUserProfileViewModelTests.swift */,
 			);
 			path = KicauanTests;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				60B9FF8E1FD2AF7900B2FEA9 /* AuthenticationViewModel.swift */,
+				60C20BE71FD2D1330087E67A /* DisplayUserProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -279,6 +293,15 @@
 				B9ECE5713E032EBF293E3B93 /* Pods-KicauanIntegrationTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		60B9FF901FD2BCEB00B2FEA9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				60B9FF911FD2BD0400B2FEA9 /* TimelineViewController.swift */,
+				60C20BE11FD2CAFE0087E67A /* MainNavigationController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -641,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C20BE21FD2CAFE0087E67A /* MainNavigationController.swift in Sources */,
 				60B9FF8F1FD2AF7900B2FEA9 /* AuthenticationViewModel.swift in Sources */,
 				600CC13F1FD26AEB00AFBE56 /* Session.swift in Sources */,
 				60B9FF8B1FD27CE600B2FEA9 /* UserProfileClientProtocol.swift in Sources */,
@@ -648,8 +672,11 @@
 				600CC13B1FD2673E00AFBE56 /* TwitterUser.swift in Sources */,
 				60B9FF871FD27BE400B2FEA9 /* DisplayUserProfile.swift in Sources */,
 				600CC12F1FD1892800AFBE56 /* TwitterAuthentication.swift in Sources */,
+				60C20BE01FD2BF2E0087E67A /* Injection.swift in Sources */,
 				600CC13D1FD26ACE00AFBE56 /* User.swift in Sources */,
+				60C20BE81FD2D1330087E67A /* DisplayUserProfileViewModel.swift in Sources */,
 				600CC1451FD26C8C00AFBE56 /* Authenticate.swift in Sources */,
+				60B9FF921FD2BD0400B2FEA9 /* TimelineViewController.swift in Sources */,
 				600CC1311FD18A5900AFBE56 /* TwitterSession.swift in Sources */,
 				600CC1391FD2670300AFBE56 /* TwitterUserProfile.swift in Sources */,
 				600CC0F01FD0E50A00AFBE56 /* AppDelegate.swift in Sources */,
@@ -662,6 +689,7 @@
 			files = (
 				60B9FF8D1FD2AE9B00B2FEA9 /* AuthenticateViewModelTests.swift in Sources */,
 				600CC1431FD26B9300AFBE56 /* AuthenticateTests.swift in Sources */,
+				60C20BE61FD2CE450087E67A /* DisplayUserProfileViewModelTests.swift in Sources */,
 				60B9FF891FD27C6900B2FEA9 /* DisplayUserProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,9 +5,11 @@ target 'Kicauan' do
   use_frameworks!
 
   pod 'TwitterKit'
-  pod 'Swinject', '~> 2.1.0'
+  pod 'Swinject', '~> 2.1.1'
+  pod 'SwinjectStoryboard'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0' 
+  pod 'Kingfisher', '~> 4.0'
   
   target 'KicauanTests' do
     inherit! :search_paths
