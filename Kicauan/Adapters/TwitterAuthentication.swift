@@ -22,12 +22,13 @@ struct TwitterAuthentication : AuthenticationClientProtocol {
         return TwitterSession.fromTwitter(session)
     }
     
-    func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
+    func login(_ completion: @escaping (_ session: TwitterSession?, _ error: Error?) -> Void) {
         Twitter.sharedInstance().logIn(completion: { (session, error) in
             if let session = session {
-                completion(TwitterSession.fromTwitter(session))
+                completion(TwitterSession.fromTwitter(session), nil)
             } else if let error = error {
-                print("error: \(error.localizedDescription)");
+                print("error: \(error.localizedDescription)")
+                completion(nil, error)
             }
         })
     }

@@ -10,6 +10,6 @@ protocol AuthenticationClientProtocol {
     var isLoggedIn: Bool { get }
     var currentSession: TwitterSession? { get }
     
-    func login(_ completion: @escaping (_ session: TwitterSession) -> Void)
+    func login(_ completion: @escaping (_ session: TwitterSession?, _ error: Error?) -> Void)
     func logout(_ session: TwitterSession)
 }

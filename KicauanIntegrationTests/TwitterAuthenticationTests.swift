@@ -15,8 +15,8 @@ class TwitterAuthenticationTests: XCTestCase {
         let expect = expectation(description: "Wait login twitter")
         
         let twitterAuth = TwitterAuthentication()
-        twitterAuth.login { session in
-            XCTAssertFalse(session.userID.isEmpty)
+        twitterAuth.login { (session, error) in
+            XCTAssertFalse(session!.userID.isEmpty)
             
             expect.fulfill()
         }

@@ -17,8 +17,8 @@ class AuthenticateTests: XCTestCase {
         
         var isLoggedIn: Bool { return true }
         
-        func login(_ completion: @escaping (_ session: TwitterSession) -> Void) {
-            completion(TwitterSession(token: "", secret: "", userName: "", userID: AuthenticateTests.userID))
+        func login(_ completion: @escaping (_ session: TwitterSession?, _ error: Error?) -> Void) {
+            completion(TwitterSession(token: "", secret: "", userID: AuthenticateTests.userID), nil)
         }
         
         func logout(_ session: TwitterSession) {}
