@@ -14,6 +14,7 @@ class AuthenticateTests: XCTestCase {
     static let userID = "100"
     
     class AuthenticationClient : AuthenticationClientProtocol {
+        var currentSession: TwitterSession? { return nil }
         
         var isLoggedIn: Bool { return true }
         

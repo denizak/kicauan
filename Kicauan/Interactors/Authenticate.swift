@@ -10,6 +10,7 @@ import Foundation
 
 protocol AuthenticateProtocol {
     var isAuthenticated: Bool { get }
+    var currentSession: Session? { get }
     func login(_ completion: @escaping (_ success: Bool, _ session: Session) -> Void)
 }
 
@@ -21,13 +22,22 @@ struct Authenticate : AuthenticateProtocol {
         return self.authenticationClient.isLoggedIn
     }
     
+    var currentSession: Session? {
+        return self.authenticationClient.currentSession?.toSession()
+    }
+    
     init(authenticationClient: AuthenticationClientProtocol) {
         self.authenticationClient = authenticationClient
     }
     
     func login(_ completion: @escaping (Bool, Session) -> Void) {
-        self.authenticationClient.login { session in
-            completion(!session.userID.isEmpty, session.toSession())
+        self.authenticationClient.login { (session, error) in
+            let success = error == nil
+            if let session = session {
+                completion(success, session.toSession())
+            } else {
+                completion(success, Session(token: "", secret: "", userID: ""))
+            }
         }
     }
 }

@@ -13,6 +13,8 @@ import RxSwift
 class AuthenticateViewModelTests: XCTestCase {
     
     class AuthenticateSuccessMock: AuthenticateProtocol {
+        var currentSession: Session?
+        
         func login(_ completion: @escaping (Bool, Session) -> Void) {
             completion(true, Session(token: "token", secret: "secret", userID: "100"))
         }
